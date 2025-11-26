@@ -37,8 +37,13 @@ This implementation features:
 * **Class Balancing:** Implemented **Median Frequency Balancing** (hardcoded weights based on the original Caffe implementation) to solve the "dominant class" problem where the model initially collapsed to predicting only 'Sky' or 'Road'.
 * /SegNet-Implementation
 
-    |-- main.py
-    |-- CamVid/
+
+        |-- main.py
+  
+        |-- CamVid/
+  
         |-- train.txt
+  
         |-- val.txt
+  
         |-- test.txt
