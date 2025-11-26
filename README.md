@@ -38,11 +38,7 @@ This implementation features:
 * /SegNet-Implementation
 
     |-- main.py
-  
     |-- CamVid/
-  
         |-- train.txt
-  
         |-- val.txt
-  
         |-- test.txt
