@@ -49,7 +49,34 @@ This implementation features:
         |-- test.txt
 
 
-* Result after model training
+## Result after model training
   <img width="1990" height="1180" alt="image" src="https://github.com/user-attachments/assets/7476837b-3c7b-4ab7-993d-3bb8ab422b80" />
+
+### 📉 Current Evaluation Results (Work in Progress)
+
+The following metrics represent the current state of the model during training.
+
+| Metric | Score | Description |
+| :--- | :--- | :--- |
+| **Global Accuracy** | 16.94% | Percentage of total pixels correctly classified. |
+| **Class Average Accuracy** | 16.94% | Average accuracy across all 11 classes. |
+| **Mean IoU** | 1.54% | Intersection over Union (Standard Segmentation Metric). |
+
+### Per-Class Breakdown
+| Class | IoU Score |
+| :--- | :--- |
+| **Sky** | **16.94%** |
+| Building | 0.00% |
+| Pole | 0.00% |
+| Road | 0.00% |
+| Pavement | 0.00% |
+| Tree | 0.00% |
+| SignSymbol | 0.00% |
+| Fence | 0.00% |
+| Car | 0.00% |
+| Pedestrian | 0.00% |
+| Bicyclist | 0.00% |
+
+*The Current results indicate the model is biased towards the dominant class (Sky) and requires further training epochs or hyperparameter tuning to resolve the issue.*
 
 
