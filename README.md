@@ -50,7 +50,6 @@ This implementation features:
 
 
 ## Result after model training
-  <img width="1990" height="1180" alt="image" src="https://github.com/user-attachments/assets/7476837b-3c7b-4ab7-993d-3bb8ab422b80" />
 
   <img width="1990" height="1180" alt="image" src="https://github.com/user-attachments/assets/0b767130-01c1-4262-863d-0cdc7aab0197" />
 
