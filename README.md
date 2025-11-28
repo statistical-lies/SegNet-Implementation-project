@@ -2,6 +2,12 @@
 
 This repository contains a PyTorch implementation of the **SegNet** architecture, as described in the paper *"SegNet: A Deep Convolutional Encoder-Decoder Architecture for Image Segmentation"* (Badrinarayanan et al., 2017).
 
+## Project Scope: 
+This implementation focuses on reproducing the Road Scene Segmentation (CamVid) benchmark described in Section 4.1 of the original paper. We chose this benchmark to rigorously validate the core SegNet contributions:
+* The efficiency of the Encoder-Decoder architecture.
+* The effectiveness of Max-Unpooling indices for boundary delineation.
+* The necessity of Median Frequency Balancing for handling class imbalance.
+
 This project was developed as an implementation study to reproduce the results on the **CamVid** road scene dataset.
 
 ## 📄 Paper Summary
@@ -110,3 +116,5 @@ The class weighting successfully resolved the mode collapse issue, allowing the 
 | SignSymbol | 12.97% |
 
 
+## Future Work:
+While this study successfully validated the architecture on structured road scenes, future extensions would involve evaluating the model on unstructured indoor environments (e.g., SUN RGB-D dataset). This would test the model's capacity to handle higher class counts (37 classes) and variable viewpoints, as discussed in Section 4.2 of the paper.
