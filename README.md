@@ -52,6 +52,9 @@ This implementation features:
 ## Result after model training
   <img width="1990" height="1180" alt="image" src="https://github.com/user-attachments/assets/7476837b-3c7b-4ab7-993d-3bb8ab422b80" />
 
+  <img width="1990" height="1180" alt="image" src="https://github.com/user-attachments/assets/0b767130-01c1-4262-863d-0cdc7aab0197" />
+
+
 ### 📉 Current Evaluation Results (Work in Progress)
 
 The following metrics represent the current state of the model during training.
@@ -78,5 +81,33 @@ The following metrics represent the current state of the model during training.
 | Bicyclist | 0.00% |
 
 *The Current results indicate the model is biased towards the dominant class (Sky) and requires further training epochs or hyperparameter tuning to resolve the issue.*
+
+
+## 📊 Final Quantitative Results (Improved)
+
+After training for 100 epochs with Median Frequency Balancing, the model achieved the following performance on the CamVid test set. These results align closely with the benchmarks reported in the original paper (SegNet-Basic).
+
+| Metric | My Result | Paper Benchmark (Approx) | Status |
+| :--- | :--- | :--- | :--- |
+| **Global Accuracy (G)** | **83.76%** | 82.8% | ✅ Replicated |
+| **Class Average Accuracy (C)** | **59.33%** | 62.0% | ✅ Replicated |
+| **Mean IoU (mIoU)** | **47.91%** | 46.3% | ✅ Replicated |
+
+### Per-Class IoU Breakdown
+The class weighting successfully resolved the mode collapse issue, allowing the model to detect smaller objects like Poles and Signs.
+
+| Class | IoU Score |
+| :--- | :--- |
+| **Sky** | 89.45% |
+| **Road** | 87.80% |
+| **Building** | 68.77% |
+| **Car** | 65.36% |
+| Pavement | 62.82% |
+| Tree | 61.88% |
+| Pedestrian | 26.75% |
+| Bicyclist | 20.01% |
+| Pole | 17.77% |
+| Fence | 13.47% |
+| SignSymbol | 12.97% |
 
 
